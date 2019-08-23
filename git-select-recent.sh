@@ -5,7 +5,7 @@ do
     eval "$entry"
     branches+=($ref)
     let i++
-done < <(git for-each-ref --format="ref=%(refname:short)" --count="5" refs/heads)
+done < <(git for-each-ref --format="ref=%(refname:short)" --count="5" --sort=-committerdate refs/heads)
 
 select branch in ${branches[@]};
 do
