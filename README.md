@@ -16,7 +16,9 @@ Pass a number to display more/less branches (default is 10): `git-select-recent 
 ## Example setup:
 
 Create a .bash_functions folder `~/.bash_functions`
+
 Copy git-select-recent.sh into the `~/.bash_functions` folder.
+
 In bashrc/bash_profile/zshrc, look through all files in the `~/.bash_functions` folder:
 
 ``` 
