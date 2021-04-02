@@ -11,6 +11,8 @@ Use it as you would any other bash function.
 
 Pass a number to display more/less branches (default is 10): `git-select-recent 25`
 
+--
+
 ## Example setup:
 
 Create a .bash_functions folder `~/.bash_functions`
