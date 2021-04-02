@@ -1,12 +1,26 @@
 # git-select-recent
-Quickly switch between recent git branches
+Quickly switch between recent local/remote git branches
 
-To get it working:
+Setup:
 
-Save the file somewhere, reference it in your ```~/.bash_profile``` as
+An example setup is:
 
+Create a .bash_functions folder `mkdir ~/.bash_functions`
+Copy git-select-recent.sh into the `~/.bash_functions` folder.
+In bashrc/bash_profile/zshrc, look through all files in the `~/.bash_functions` folder:
+
+``` 
+if [ -d ~/.bash_functions ]; then
+        for file in ~/.bash_functions/*; do
+                . "$file"
+        done
+fi
 ```
-alias recent="*yourpath*/git-select-recent/git-select-recent.sh"
+
+Add aliases
+```
+alias recent=git-select-recent #Looks through local branches
+alias remcent=git-select-recet-remote #Looks through remote branches (do git fetch beforehand)
 ```
 
-go into any git repo, type ```recent``` into your terminal, and then you can easily choose which branch to checkout.
+In a git repo, type `recent` or `remcent`, and easily choose which branch to checkout.
