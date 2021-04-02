@@ -32,7 +32,7 @@ fi
 Add aliases
 ```
 alias recent=git-select-recent 
-alias remcent=git-select-recet-remote #Looks through remote branches (do git fetch beforehand)
+alias remcent=git-select-recet-remote
 ```
 
 In a git repo, type `recent` or `remcent`, and easily choose which branch to checkout.
