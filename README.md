@@ -1,13 +1,17 @@
 # git-select-recent
 Quickly switch between recent local/remote git branches
 
-Setup:
+## Use:
 
-Use it as you would any other bash function, depending on your setup.
+Use it as you would any other bash function.
+
 `git-select-recent` <- Displays local branches (`.git/refs/heads`)
+
 `git-select-recent-remote` <- Displays remote branches (`.git/refs/remotes`) (do a git fetch beforehand)
 
-An example setup is:
+Pass a number to display more/less branches (default is 10): `git-select-recent 25`
+
+## Example setup:
 
 Create a .bash_functions folder `~/.bash_functions`
 Copy git-select-recent.sh into the `~/.bash_functions` folder.
